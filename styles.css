@@ -1,0 +1,144 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    background-color: #2727279a; /* Changed from white (#fff) to light grey (#f5f5f5) */
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 600px; /* Keeps social icons, link buttons, etc. constrained */
+    margin: 0 auto;
+}
+
+.social-icons {
+    margin: 20px 0;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+}
+
+.header {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 1) 100%), url('me\ .jpg');
+    background-size: 100% auto; /* Makes the image span the full width of the header while maintaining aspect ratio */
+    background-position: center top; /* Positions the image to show the top part (your face) */
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    height: 350px; /* Increased height to better fit the image */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Aligns content to the bottom */
+    align-items: center;
+    padding-bottom: 30px; /* Adds space at the bottom so text isn't right at the edge */
+}
+
+.header h1 {
+    font-size: 2.5em;
+    color: #000;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin: 0;
+}
+
+.header p:nth-child(2) {
+    font-size: 1.2em;
+    color: #000;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.header p:nth-child(3) {
+    font-size: 1em;
+    color: #000;
+    margin: 5px 0;
+}
+
+.link-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px auto;
+    padding: 15px;
+    width: 80%;
+    max-width: 300px;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1.2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.link-button:hover {
+    transform: scale(1.05);
+}
+
+/* Glow effect for LinkedIn (Blue) */
+.linkedin-btn:hover {
+    box-shadow: 0 0 15px 5px rgba(0, 119, 181, 0.7); /* Blue glow */
+}
+
+/* Glow effect for Instagram (Orange) */
+.instagram-btn:hover {
+    box-shadow: 0 0 15px 5px rgba(247, 119, 55, 0.7); /* Orange glow */
+}
+
+/* Glow effect for TikTok (Pink) */
+.tiktok-btn:hover {
+    box-shadow: 0 0 15px 5px rgba(255, 105, 180, 0.7); /* Pink glow */
+}
+
+/* Glow effect for YouTube (Red) */
+.youtube-btn:hover {
+    box-shadow: 0 0 15px 5px rgba(255, 0, 0, 0.7); /* Red glow */
+}
+
+/* Glow effect for Twitter/X (Black) */
+.twitter-btn:hover {
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.7); /* Black glow */
+}
+
+.button-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.share-text {
+    font-size: 0.9em;
+    color: #000;
+    margin-top: 20px;
+}
+
+.share-text input {
+    width: 200px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.share-text button {
+    padding: 5px 10px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.share-text button:hover {
+    background-color: #f0f0f0;
+}
